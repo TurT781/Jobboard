@@ -1,0 +1,11 @@
+when@dev:
+    _errors:
+        resource: '@FrameworkBundle/Resources/config/routing/errors.xml'
+        prefix: /_error
+
+# framework:
+#     cors:
+#         allow_origin: ['http://localhost:3000']
+#         allow_methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+#         allow_headers: ['Content-Type', 'Authorization']
+#         max_age: 3600

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #081b29;
+    --text-color: #D3D3D3;
+    --main-color: #f8cb2e;
+    --secondary-color: #1f2e3a;
+}
+
+.footer {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--secondary-color);
+    bottom: 0;
+}
+
+
+.footerTitle {
+    display: flex;
+    justify-content: center, space-evenly;
+    align-items: center;
+    font-family: "Athiti", sans-serif;
+}
+
+.contactContent {
+    height: auto;
+    margin: 0.7rem;
+    text-align: center;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.contactContent li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: auto;
+    margin-top: 0.7rem;
+
+}
+
+.contactContent h3 {
+    font-style: initial;
+    font-family: "Athiti", sans-serif;
+
+}

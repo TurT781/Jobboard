@@ -1,0 +1,20 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #081b29;
+    --text-color: #D3D3D3;
+    --main-color: #f8cb2e;
+    --secondary-color: #1f2e3a;
+}
+
+.pageOffers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+}

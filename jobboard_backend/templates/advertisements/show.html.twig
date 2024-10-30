@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Advertisements{% endblock %}
+
+{% block body %}
+    <h1>Advertisements</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ advertisement.id }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ advertisement.title }}</td>
+            </tr>
+            <tr>
+                <th>Created_at</th>
+                <td>{{ advertisement.createdAt ? advertisement.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Salary_min</th>
+                <td>{{ advertisement.salaryMin }}</td>
+            </tr>
+            <tr>
+                <th>Experience_level</th>
+                <td>{{ advertisement.experienceLevel }}</td>
+            </tr>
+            <tr>
+                <th>Education_level</th>
+                <td>{{ advertisement.educationLevel }}</td>
+            </tr>
+            <tr>
+                <th>Working_time</th>
+                <td>{{ advertisement.workingTime }}</td>
+            </tr>
+            <tr>
+                <th>Content</th>
+                <td>{{ advertisement.content }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_advertisements_index') }}">back to list</a>
+
+    <a href="{{ path('app_advertisements_edit', {'id': advertisement.id}) }}">edit</a>
+
+    {{ include('advertisements/_delete_form.html.twig') }}
+{% endblock %}

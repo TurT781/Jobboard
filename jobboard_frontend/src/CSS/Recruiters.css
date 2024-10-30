@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #081b29;
+    --text-color: #D3D3D3;
+    --main-color: #f8cb2e;
+    --secondary-color: #1f2e3a;
+    --font-primary: 'Red Hat Mono', monospace;
+    --font-secondary: 'Overpass Mono', monospace;
+}
+
+
+
+.recruiterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px var(--main-color);
+    font-size: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.return{
+    background-color: var(--bg-color);
+    width: 10rem;
+    height: 3rem;
+    color: var(--main-color);
+    margin: 50px;
+    border-radius: 10px;
+
+}
+
+

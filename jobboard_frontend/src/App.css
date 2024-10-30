@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #081b29;
+  --text-color: #D3D3D3;
+  --main-color: #f8cb2e;
+  --secondary-color: #1f2e3a;
+}
+

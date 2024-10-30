@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #081b29;
+    --text-color: #D3D3D3;
+    --main-color: #f8cb2e;
+    --secondary-color: #1f2e3a;
+}
+
+.inputWrapper {
+    background-color: var(--secondary-color);
+    width: 100%;
+    color: var(--text-color);
+    border-radius: 10px;
+    height: 2.5rem;
+    padding: 0 15px;
+    box-shadow: 0px 0px 8px var(--main-color);
+    display: flex;
+    align-items: center;
+    font-family: "Overpass Mono", monospace;
+}
+
+.inputWrapper ::after{
+    transform: scale(1.03);
+}
+
+
+input {
+    background-color: transparent;
+    font-family:"thing"; /*Ive no idea which F-M is this ...*/ 
+    color: var(--text-color);
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 1.25rem;
+    margin-left: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+#searchIcon{
+    color: var(--main-color);
+}

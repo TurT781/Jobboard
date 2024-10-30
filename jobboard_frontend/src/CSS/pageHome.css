@@ -1,0 +1,104 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  background: linear-gradient(135deg, var(--bg-color), var(--secondary-color));
+  height: 60vh;
+  overflow: hidden;
+}
+
+.contentBox {
+  background: rgba(201, 188, 188, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: var(--text-color);
+  max-width: 700px;
+  width: 100%;
+
+}
+
+.contentHomeTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentHomeTitle span {
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
+
+/* .contentHomeTitle img {
+    width: 80px;
+    height: auto;
+    margin-top: 1rem;
+  } */
+
+.contentHomeText p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.searchingBarBox {
+  padding: 1rem;
+}
+
+.searchingBarTitle h1 {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.searchingBar {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.searchingBar button {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 15rem;
+  max-width: 150px;
+  min-width: 150px; 
+  text-align: center;
+
+}
+
+.searchingBar button:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+@media (max-width: 600px) {
+  .searchingBar button {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .searchingBar {
+    gap: 1rem;
+  }
+}
